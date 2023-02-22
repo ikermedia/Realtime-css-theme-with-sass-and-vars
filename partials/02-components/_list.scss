@@ -1,0 +1,124 @@
+/**
+ * @List
+ *-------------------------------------------------------------------------------------*/
+
+.list {
+
+    &--dark{
+        .list{
+            &__title{
+                background-color: $custom-mid;
+            }
+            &__header{
+                background-color: $custom-light;
+            }
+            &__body{
+                background-color: $custom-dark;
+            }
+            &__footer{
+                background-color: $custom-mid;
+            }
+        }
+
+    }
+
+    
+    &__title {
+        padding: $margin-s;
+        background-color: $custom-light;
+        border: 1px solid $custom-dark;
+        text-align: center;
+        border-bottom: none;
+    }
+
+    &__body {
+        background-color: $custom-mid;
+        color: #252525;
+        border: 1px solid $custom-dark;
+        display: block;
+        width: 100%;
+        list-style: none;
+        padding: $margin-s;
+        overflow: auto;
+        min-height: 150px;
+        max-height: 400px;
+        margin: 0;
+        transition: .3s linear;
+
+
+        &__item {
+            cursor: pointer;
+            background-color: white;
+            font-size: $font-size;
+            color: #666;
+            overflow: hidden;
+            margin-bottom: 1px;
+            padding: $margin;
+            &:last-child {
+                border-bottom-color: white;
+            }
+           
+            &:active:not(.no-active),
+            &.active {
+                background-color: $blue;
+                color: white;
+            }
+            &.active:hover {
+                background-color: $blue;
+            }
+            &:hover {
+                background-color: darken($btn-default, 3%);
+            }
+        }
+    }
+
+    &__header {
+        float: none;
+        width: 100%;
+        background-color: white;
+        padding: $margin;
+        border: 1px solid $custom-dark;
+        overflow: auto;
+
+        .counter {
+            text-align: right;
+            margin-top: $margin;
+            clear: both;
+        }
+    }
+
+    &__footer {
+        padding: $margin;
+        border: 1px solid $custom-dark;
+        background-color: $custom-light;
+        border-top: none;
+        overflow: auto;
+        &>* {
+            margin-right: $margin-s;
+        }
+    }
+}
+
+
+/**
+ * Counter
+ *-----------------------------------------------------------------------*/
+
+.counter {
+    display: inline-block;
+    &--right {
+        float: right;
+    }
+    &--left {
+        float: left;
+    }
+    &__text {
+        font-style: italic;
+        color: #aaa;
+        margin-right: $margin-s;
+    }
+    &__number {
+        font-weight: normal;
+        color: $blue;
+    }
+}

@@ -1,0 +1,21 @@
+/* CSS StyleGuide */
+
+/* 00.commons*/
+
+@import "partials/00-commons/vars";
+@import "partials/00-commons/commons";
+
+/* 01.base */
+
+@import "partials/01-base/reset";
+@import "partials/01-base/general";
+@import "partials/01-base/buttons";
+@import "partials/01-base/grid";
+
+
+/* 02.components */
+
+@import "partials/02-components/list";
+@import "partials/02-components/page";
+
+

@@ -1,0 +1,98 @@
+/**
+ * General
+ * ---------------------------------------------------- 
+ */
+
+:root{
+
+    --space-unit: 1px;
+    --space-xxs: calc(1 * var(--space-unit));
+    --space-xs: calc(2 * var(--space-unit));
+    --space-sm: calc(4 * var(--space-unit));
+    --space-md: calc(8 * var(--space-unit));
+    --space-lg: calc(16 * var(--space-unit));
+    --space-xl: calc(32 * var(--space-unit));
+    --space-xxl: calc(64 * var(--space-unit));
+
+    --font-size: #{$css-font-size};
+    --font-size-xxl: #{$css-font-size-xxl};
+    --font-size-xl: #{$css-font-size-xl};
+    --font-size-l: #{$css-font-size-l};
+    --font-size-m: #{$css-font-size-m};
+    --font-size-s: #{$css-font-size-s};
+    --font-size-xs: #{$css-font-size-xs};
+    --font-size-xxs: #{$css-font-size-xxs};
+}
+
+
+html {
+    color: $font-color;
+    font-family: $font-family, sans-serif;
+    font-weight: lighter;
+    height: 100%;
+    background-color: $custom-mid;
+}
+
+body {
+    height: 100%;
+
+    &.small{
+        --space-unit: 0.5px;
+        --space-xxs: calc(1 * var(--space-unit));
+        --space-xs: calc(2 * var(--space-unit));
+        --space-sm: calc(4 * var(--space-unit));
+        --space-md: calc(8 * var(--space-unit));
+        --space-lg: calc(16 * var(--space-unit));
+        --space-xl: calc(32 * var(--space-unit));
+        --space-xxl: calc(64 * var(--space-unit));
+    }
+    &.large{
+        --space-unit: 2px;
+        --space-xxs: calc(1 * var(--space-unit));
+        --space-xs: calc(2 * var(--space-unit));
+        --space-sm: calc(4 * var(--space-unit));
+        --space-md: calc(8 * var(--space-unit));
+        --space-lg: calc(16 * var(--space-unit));
+        --space-xl: calc(32 * var(--space-unit));
+        --space-xxl: calc(64 * var(--space-unit));
+    }
+
+   
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+img{
+    vertical-align: middle;
+}
+
+hr,
+.hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    width: 50%;
+    border-top: 1px solid $custom-mid; // $blue;
+    margin: $margin-m auto;
+    padding: 0;
+    text-align: center;
+   // border-style: dashed;
+}
+.hr--long {
+    margin: $margin-l auto;
+}
+
+// Body container
+.body {
+    padding-top: 50px;
+    padding-left: 230px;
+    background-color: $custom-mid;
+    height: 100%;
+    &--mini {
+        padding-left: 50px;
+        transition: .3s ease-in-out;
+    }
+}
+

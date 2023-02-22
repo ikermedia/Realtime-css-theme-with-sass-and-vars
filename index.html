@@ -1,0 +1,69 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Dynamic css theme</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="dist/font-awesome.css">
+    <link rel="stylesheet" href="dist/styles.css">
+
+</head>
+
+<body>
+    <div class="page">
+        <div class="page__title">
+            Dynamic theme example
+        </div>
+
+        <div class="grid grid--1">
+            <div class="btn-group btn-group--selector">
+                <button class="btn btn-default btn--xs active">Light</button>
+                <button class="btn btn-default btn--xs">Dark</button>
+            </div>
+
+            <div class="btn-group btn-group--selector">
+                <button class="btn btn-default btn--xs active">Large</button>
+                <button class="btn btn-default btn--xs">Medium</button>
+                <button class="btn btn-default btn--xs">Small</button>
+            </div>
+        </div>
+
+        <div class="grid grid--3">
+            <div class="list">
+                <div class="list__title">List example</div>
+                <div class="list__header">
+                    <div class="counter counter--right">
+                        <span class="counter__text">Items: </span>
+                        <span class="counter__number">5</span>
+                    </div>
+                </div>
+                <ul class="list__body">
+                    <li class="list__body__item">Example 1</li>
+                </ul>
+                <div class="list__footer">
+                    <div class="counter"><span class="counter__text">Selected: </span>
+                        <span class="counter__number">0</span>
+                    </div>
+                    <button type="button" class="btn btn--xs btn--default btn--disabled">
+                        Select all
+                    </button>
+                    <button type="button" class="btn btn--xs btn--default btn--disabled">
+                        Deselect all
+                    </button>
+                    <button type="button" class="btn btn--xs btn--filled h--right btn--disabled"><i
+                            class="fa fa-angle-double-right margin-right"></i>Select
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
