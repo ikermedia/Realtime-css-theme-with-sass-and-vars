@@ -7,9 +7,9 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="dist/font-awesome.css">
-    <link rel="stylesheet" href="dist/styles.css">
-
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="main.js"></script>
 </head>
 
 <body>
@@ -19,15 +19,24 @@
         </div>
 
         <div class="grid grid--1">
+            <span>Theme</span>
             <div class="btn-group btn-group--selector">
-                <button class="btn btn-default btn--xs active">Light</button>
-                <button class="btn btn-default btn--xs">Dark</button>
+                <button id="btnLight" class="btn btn-default btn--xs active">Light</button>
+                <button id="btnDark" class="btn btn-default btn--xs">Dark</button>
             </div>
 
+            <span>Body</span>
             <div class="btn-group btn-group--selector">
-                <button class="btn btn-default btn--xs active">Large</button>
-                <button class="btn btn-default btn--xs">Medium</button>
-                <button class="btn btn-default btn--xs">Small</button>
+                <button id="btnBodyLarge" class="btn btn-default btn--xs">Large</button>
+                <button id="btnBodyMedium" class="btn btn-default btn--xs active">Medium</button>
+                <button id="btnBodySmall" class="btn btn-default btn--xs">Small</button>
+            </div>
+
+            <span>Font</span>
+            <div class="btn-group btn-group--selector">
+                <button id="btnFontLarge" class="btn btn-default btn--xs">Large</button>
+                <button id="btnFontMedium" class="btn btn-default btn--xs active">Medium</button>
+                <button id="btnFontSmall" class="btn btn-default btn--xs">Small</button>
             </div>
         </div>
 

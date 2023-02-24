@@ -3,9 +3,9 @@
  */
 
 .page {
-    margin: $margin;
-    padding: $margin-m;
-    padding-bottom: $margin-l;
+    margin: $margin-m;
+    padding: $margin-l;
+    padding-bottom: $margin-xl;
     border-radius: 4px;
     background: white;
     &--home {
@@ -17,6 +17,6 @@
     border-bottom: 1px solid #e6e6e6;
     font-size: $font-size-l;
     font-weight: 100;
-    margin-bottom: $margin-l;
+    margin-bottom: $margin-xl;
 }
 

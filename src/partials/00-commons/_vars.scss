@@ -1,0 +1,50 @@
+
+// Font Stack 
+$font-family: 'Roboto';
+
+// Layout spacing
+//$margin-unit: --space-unit;
+$margin-xxs: var(--space-xxs);
+$margin-xs: var(--space-xs);
+$margin-s: var(--space-s);
+$margin-m: var(--space-m);
+$margin-l: var(--space-l);
+$margin-xl: var(--space-xl);
+$margin-xxl: var(--space-xxl);
+
+
+// Font Color 
+$font-color: #333;
+
+// Font Size
+$font-size-xs: var(--font-size-xs);
+$font-size-s: var(--font-size-s);
+$font-size-m: var(--font-size-m);
+$font-size-l: var(--font-size-l);
+$font-size-xl: var(--font-size-xl);
+
+
+// Colors 
+$blue: #3c8dbc;
+
+// Interface colors 
+$interface-light: var(--interface-light);
+$interface-mid: var(--interface-mid);
+$interface-dark: var(--interface-dark);
+$interface-darker: var(--interface-darker);
+
+// Button vars 
+$btn-font-weight: lighter;
+$btn-default: #fff;
+$btn-default-hover: lighten($btn-default, 10%);
+$btn-default-active: darken($btn-default, 20%);
+$btn-radius: $margin-xs;
+
+$btn-disabled-color: #a6a9af;
+$btn-disabled-bg: #f1f1f1;
+
+// Media Queries 
+$break-large: 1790px;
+$break-mid: 1280px;
+$break-s: 1024px;
+$break-xs: 992px;

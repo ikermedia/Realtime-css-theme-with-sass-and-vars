@@ -1,0 +1,109 @@
+/**
+ * General
+ * ---------------------------------------------------- 
+ */
+
+:root{
+    --space-unit: 1px;
+    --space-xxs: calc(1 * var(--space-unit));
+    --space-xs: calc(2 * var(--space-unit));
+    --space-s: calc(4 * var(--space-unit));
+    --space-m: calc(8 * var(--space-unit));
+    --space-l: calc(16 * var(--space-unit));
+    --space-xl: calc(32 * var(--space-unit));
+    --space-xxl: calc(64 * var(--space-unit));
+
+    --font-size-xs: 10px;
+    --font-size-s: 12px;
+    --font-size-m: 14px;
+    --font-size-l: 16px;
+    --font-size-xl: 18px;
+   
+    --interface-light: #F9FAFC;
+    --interface-mid: #e8ecf4;
+    --interface-dark: #d4dae4;
+    --interface-darker: #b4c1d6;
+}
+
+
+html {
+    color: $font-color;
+    font-family: $font-family, sans-serif;
+    font-weight: lighter;
+    height: 100%;
+    background-color: #e8ecf4;
+    font-size: $font-size-m;
+}
+
+body {
+    height: 100%;
+
+    &.theme-dark{
+        --interface-light: #6e6e6e;
+        --interface-mid: #747474;
+        --interface-dark: #494949;
+        --interface-darker: #2a2a2a;
+    }
+
+    &.body-small{
+        --space-unit: 0.5px;
+        --space-xxs: calc(1 * var(--space-unit));
+        --space-xs: calc(2 * var(--space-unit));
+        --space-s: calc(4 * var(--space-unit));
+        --space-m: calc(8 * var(--space-unit));
+        --space-l: calc(16 * var(--space-unit));
+        --space-xl: calc(32 * var(--space-unit));
+        --space-xxl: calc(64 * var(--space-unit));
+    }
+    &.body-large{
+        --space-unit: 2px;
+        --space-xxs: calc(1 * var(--space-unit));
+        --space-xs: calc(2 * var(--space-unit));
+        --space-s: calc(4 * var(--space-unit));
+        --space-m: calc(8 * var(--space-unit));
+        --space-l: calc(16 * var(--space-unit));
+        --space-xl: calc(32 * var(--space-unit));
+        --space-xxl: calc(64 * var(--space-unit));
+    }
+
+    &.font-small{
+        --font-size-xs: 8px;
+        --font-size-s: 10px;
+        --font-size-m: 12px;
+        --font-size-l: 14px;
+        --font-size-xl: 16px;
+    }
+   
+    &.font-large{
+        --font-size-xs: 12px;
+        --font-size-s: 14px;
+        --font-size-m: 16px;
+        --font-size-l: 18px;
+        --font-size-xl: 20px;
+    }
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+img{
+    vertical-align: middle;
+}
+
+hr,
+.hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    width: 50%;
+    border-top: 1px solid #e8ecf4;
+    margin: $margin-m auto;
+    padding: 0;
+    text-align: center;
+}
+.hr--long {
+    margin: $margin-l auto;
+}
+
+

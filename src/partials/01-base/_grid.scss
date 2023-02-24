@@ -3,7 +3,7 @@
  *---------------------------------------------------------*/
 
 .grid-group {
-    border-bottom: 1px solid $custom-mid;
+    border-bottom: 1px solid $interface-mid;
     padding: $margin-m 0;
     .grid:not(:last-child) {
         padding-bottom: $margin-m;
@@ -28,13 +28,13 @@
 .grid {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
-    grid-gap: $margin-m;
+    grid-gap: $margin-l;
     align-self: start;
     &--no-padding {
         padding: 0;
     }
     &+& {
-        padding-top: $margin-m;
+        padding-top: $margin-l;
     }
     @media screen and (max-width: $break-xs) {
         grid-template-columns: minmax(0, 1fr)!important;

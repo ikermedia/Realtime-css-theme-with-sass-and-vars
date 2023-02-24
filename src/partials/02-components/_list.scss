@@ -3,38 +3,20 @@
  *-------------------------------------------------------------------------------------*/
 
 .list {
-
-    &--dark{
-        .list{
-            &__title{
-                background-color: $custom-mid;
-            }
-            &__header{
-                background-color: $custom-light;
-            }
-            &__body{
-                background-color: $custom-dark;
-            }
-            &__footer{
-                background-color: $custom-mid;
-            }
-        }
-
-    }
-
     
     &__title {
         padding: $margin-s;
-        background-color: $custom-light;
-        border: 1px solid $custom-dark;
+        background-color: $interface-light;
+        border: 1px solid $interface-dark;
         text-align: center;
         border-bottom: none;
+        font-size: $font-size-l;
     }
 
     &__body {
-        background-color: $custom-mid;
+        background-color: $interface-mid;
         color: #252525;
-        border: 1px solid $custom-dark;
+        border: 1px solid $interface-dark;
         display: block;
         width: 100%;
         list-style: none;
@@ -49,11 +31,11 @@
         &__item {
             cursor: pointer;
             background-color: white;
-            font-size: $font-size;
+            font-size: $font-size-m;
             color: #666;
             overflow: hidden;
             margin-bottom: 1px;
-            padding: $margin;
+            padding: $margin-m;
             &:last-child {
                 border-bottom-color: white;
             }
@@ -76,21 +58,21 @@
         float: none;
         width: 100%;
         background-color: white;
-        padding: $margin;
-        border: 1px solid $custom-dark;
+        padding: $margin-m;
+        border: 1px solid $interface-dark;
         overflow: auto;
 
         .counter {
             text-align: right;
-            margin-top: $margin;
+            margin-top: $margin-m;
             clear: both;
         }
     }
 
     &__footer {
-        padding: $margin;
-        border: 1px solid $custom-dark;
-        background-color: $custom-light;
+        padding: $margin-m;
+        border: 1px solid $interface-dark;
+        background-color: $interface-light;
         border-top: none;
         overflow: auto;
         &>* {
@@ -106,6 +88,7 @@
 
 .counter {
     display: inline-block;
+    font-size: $font-size-s;
     &--right {
         float: right;
     }
@@ -120,5 +103,6 @@
     &__number {
         font-weight: normal;
         color: $blue;
+
     }
 }

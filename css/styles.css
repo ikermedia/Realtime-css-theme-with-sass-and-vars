@@ -1,11 +1,5 @@
 /* CSS StyleGuide */
 /* 00.commons*/
-/* $margin-xs: 2px;
-$margin-s: 4px;
-$margin: 8px;
-$margin-m: 16px;
-$margin-l: 32px;
-$margin-xl: 64px; */
 /**
  * Reglas que son comunes para todos los componentes.
  */
@@ -332,19 +326,20 @@ template {
   --space-unit: 1px;
   --space-xxs: calc(1 * var(--space-unit));
   --space-xs: calc(2 * var(--space-unit));
-  --space-sm: calc(4 * var(--space-unit));
-  --space-md: calc(8 * var(--space-unit));
-  --space-lg: calc(16 * var(--space-unit));
+  --space-s: calc(4 * var(--space-unit));
+  --space-m: calc(8 * var(--space-unit));
+  --space-l: calc(16 * var(--space-unit));
   --space-xl: calc(32 * var(--space-unit));
   --space-xxl: calc(64 * var(--space-unit));
-  --font-size: 14px;
-  --font-size-xxl: 36px;
-  --font-size-xl: 24px;
-  --font-size-l: 18px;
-  --font-size-m: 16px;
+  --font-size-xs: 10px;
   --font-size-s: 12px;
-  --font-size-xs: 11px;
-  --font-size-xxs: 10px;
+  --font-size-m: 14px;
+  --font-size-l: 16px;
+  --font-size-xl: 18px;
+  --interface-light: #F9FAFC;
+  --interface-mid: #e8ecf4;
+  --interface-dark: #d4dae4;
+  --interface-darker: #b4c1d6;
 }
 
 html {
@@ -353,30 +348,51 @@ html {
   font-weight: lighter;
   height: 100%;
   background-color: #e8ecf4;
+  font-size: var(--font-size-m);
 }
 
 body {
   height: 100%;
 }
-body.small {
+body.theme-dark {
+  --interface-light: #6e6e6e;
+  --interface-mid: #747474;
+  --interface-dark: #494949;
+  --interface-darker: #2a2a2a;
+}
+body.body-small {
   --space-unit: 0.5px;
   --space-xxs: calc(1 * var(--space-unit));
   --space-xs: calc(2 * var(--space-unit));
-  --space-sm: calc(4 * var(--space-unit));
-  --space-md: calc(8 * var(--space-unit));
-  --space-lg: calc(16 * var(--space-unit));
+  --space-s: calc(4 * var(--space-unit));
+  --space-m: calc(8 * var(--space-unit));
+  --space-l: calc(16 * var(--space-unit));
   --space-xl: calc(32 * var(--space-unit));
   --space-xxl: calc(64 * var(--space-unit));
 }
-body.large {
+body.body-large {
   --space-unit: 2px;
   --space-xxs: calc(1 * var(--space-unit));
   --space-xs: calc(2 * var(--space-unit));
-  --space-sm: calc(4 * var(--space-unit));
-  --space-md: calc(8 * var(--space-unit));
-  --space-lg: calc(16 * var(--space-unit));
+  --space-s: calc(4 * var(--space-unit));
+  --space-m: calc(8 * var(--space-unit));
+  --space-l: calc(16 * var(--space-unit));
   --space-xl: calc(32 * var(--space-unit));
   --space-xxl: calc(64 * var(--space-unit));
+}
+body.font-small {
+  --font-size-xs: 8px;
+  --font-size-s: 10px;
+  --font-size-m: 12px;
+  --font-size-l: 14px;
+  --font-size-xl: 16px;
+}
+body.font-large {
+  --font-size-xs: 12px;
+  --font-size-s: 14px;
+  --font-size-m: 16px;
+  --font-size-l: 18px;
+  --font-size-xl: 20px;
 }
 
 a {
@@ -395,24 +411,13 @@ hr,
   border: 0;
   width: 50%;
   border-top: 1px solid #e8ecf4;
-  margin: var(--space-lg) auto;
+  margin: var(--space-m) auto;
   padding: 0;
   text-align: center;
 }
 
 .hr--long {
-  margin: var(--space-xl) auto;
-}
-
-.body {
-  padding-top: 50px;
-  padding-left: 230px;
-  background-color: #e8ecf4;
-  height: 100%;
-}
-.body--mini {
-  padding-left: 50px;
-  transition: 0.3s ease-in-out;
+  margin: var(--space-l) auto;
 }
 
 /**
@@ -424,11 +429,11 @@ hr,
  * Boton  -- default
  ------------------ */
 .btn {
-  border-radius: var(--space-sm);
-  padding: var(--space-md) var(--space-lg);
+  border-radius: var(--space-s);
+  padding: var(--space-m);
   display: inline-block;
   vertical-align: middle;
-  font-size: var(--font-size);
+  font-size: var(--font-size-m);
   border: 1px solid rgba(0, 0, 0, 0.15);
   font-weight: lighter;
   overflow: hidden;
@@ -440,7 +445,7 @@ hr,
   appearance: none;
 }
 .btn + .btn {
-  margin-left: var(--space-sm);
+  margin-left: var(--space-s);
 }
 .btn span {
   pointer-events: none;
@@ -465,18 +470,18 @@ hr,
   color: #a6a9af !important;
 }
 .btn--xs {
-  border-radius: var(--space-sm);
-  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--space-s);
+  padding: var(--space-s);
   font-size: var(--font-size-s);
 }
 .btn--xs > i {
   font-size: var(--font-size-s);
 }
 .btn--xs > .margin-right {
-  margin-right: var(--space-sm);
+  margin-right: var(--space-s);
 }
 .btn--xs > .margin-left {
-  margin-left: var(--space-sm);
+  margin-left: var(--space-s);
 }
 .btn--default {
   background-color: #fff;
@@ -514,10 +519,10 @@ hr,
   margin: 0;
 }
 .btn-group .btn:first-child {
-  border-radius: var(--space-sm) 0 0 var(--space-sm);
+  border-radius: var(--space-s) 0 0 var(--space-s);
 }
 .btn-group .btn:last-child {
-  border-radius: 0 var(--space-sm) var(--space-sm) 0;
+  border-radius: 0 var(--space-s) var(--space-s) 0;
   border-right: 1px solid rgba(0, 0, 0, 0.15);
 }
 .btn-group--selector .btn.active {
@@ -535,17 +540,17 @@ hr,
  * @Grid container based in Grid Layout 
  *---------------------------------------------------------*/
 .grid-group {
-  border-bottom: 1px solid #e8ecf4;
-  padding: var(--space-lg) 0;
+  border-bottom: 1px solid var(--interface-mid);
+  padding: var(--space-m) 0;
 }
 .grid-group .grid:not(:last-child) {
-  padding-bottom: var(--space-lg);
+  padding-bottom: var(--space-m);
 }
 .grid-group .grid + .grid {
   padding-top: 0;
 }
 .grid-group + .grid {
-  padding-top: var(--space-lg);
+  padding-top: var(--space-m);
 }
 .grid-group:last-child {
   padding-bottom: 0;
@@ -558,14 +563,14 @@ hr,
 .grid {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
-  grid-gap: var(--space-lg);
+  grid-gap: var(--space-l);
   align-self: start;
 }
 .grid--no-padding {
   padding: 0;
 }
 .grid + .grid {
-  padding-top: var(--space-lg);
+  padding-top: var(--space-l);
 }
 @media screen and (max-width: 992px) {
   .grid {
@@ -608,33 +613,22 @@ hr,
 /**
  * @List
  *-------------------------------------------------------------------------------------*/
-.list--dark .list__title {
-  background-color: #e8ecf4;
-}
-.list--dark .list__header {
-  background-color: #F9FAFC;
-}
-.list--dark .list__body {
-  background-color: #d4dae4;
-}
-.list--dark .list__footer {
-  background-color: #e8ecf4;
-}
 .list__title {
-  padding: var(--space-sm);
-  background-color: #F9FAFC;
-  border: 1px solid #d4dae4;
+  padding: var(--space-s);
+  background-color: var(--interface-light);
+  border: 1px solid var(--interface-dark);
   text-align: center;
   border-bottom: none;
+  font-size: var(--font-size-l);
 }
 .list__body {
-  background-color: #e8ecf4;
+  background-color: var(--interface-mid);
   color: #252525;
-  border: 1px solid #d4dae4;
+  border: 1px solid var(--interface-dark);
   display: block;
   width: 100%;
   list-style: none;
-  padding: var(--space-sm);
+  padding: var(--space-s);
   overflow: auto;
   min-height: 150px;
   max-height: 400px;
@@ -644,11 +638,11 @@ hr,
 .list__body__item {
   cursor: pointer;
   background-color: white;
-  font-size: var(--font-size);
+  font-size: var(--font-size-m);
   color: #666;
   overflow: hidden;
   margin-bottom: 1px;
-  padding: var(--space-md);
+  padding: var(--space-m);
 }
 .list__body__item:last-child {
   border-bottom-color: white;
@@ -667,24 +661,24 @@ hr,
   float: none;
   width: 100%;
   background-color: white;
-  padding: var(--space-md);
-  border: 1px solid #d4dae4;
+  padding: var(--space-m);
+  border: 1px solid var(--interface-dark);
   overflow: auto;
 }
 .list__header .counter {
   text-align: right;
-  margin-top: var(--space-md);
+  margin-top: var(--space-m);
   clear: both;
 }
 .list__footer {
-  padding: var(--space-md);
-  border: 1px solid #d4dae4;
-  background-color: #F9FAFC;
+  padding: var(--space-m);
+  border: 1px solid var(--interface-dark);
+  background-color: var(--interface-light);
   border-top: none;
   overflow: auto;
 }
 .list__footer > * {
-  margin-right: var(--space-sm);
+  margin-right: var(--space-s);
 }
 
 /**
@@ -692,6 +686,7 @@ hr,
  *-----------------------------------------------------------------------*/
 .counter {
   display: inline-block;
+  font-size: var(--font-size-s);
 }
 .counter--right {
   float: right;
@@ -702,7 +697,7 @@ hr,
 .counter__text {
   font-style: italic;
   color: #aaa;
-  margin-right: var(--space-sm);
+  margin-right: var(--space-s);
 }
 .counter__number {
   font-weight: normal;
@@ -713,8 +708,8 @@ hr,
  * Page component
  */
 .page {
-  margin: var(--space-md);
-  padding: var(--space-lg);
+  margin: var(--space-m);
+  padding: var(--space-l);
   padding-bottom: var(--space-xl);
   border-radius: 4px;
   background: white;

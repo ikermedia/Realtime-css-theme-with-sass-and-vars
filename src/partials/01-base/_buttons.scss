@@ -4,31 +4,16 @@
  * 
  */
 
-
-// Button vars 
-
-$btn-font-weight: lighter;
-$btn-default: #fff;
-$btn-default-hover: lighten($btn-default, 10%);
-$btn-default-active: darken($btn-default, 20%);
-$btn-radius: $margin-xs;
-
-// disabled button 
-
-$btn-disabled-color: #a6a9af;
-$btn-disabled-bg: #f1f1f1;
-
-
 /*
  * Boton  -- default
  ------------------ */
 
 .btn {
     border-radius: $margin-s;
-    padding: $margin $margin-m;
+    padding: $margin-m;
     display: inline-block;
     vertical-align: middle;
-    font-size: $font-size;
+    font-size: $font-size-m;
     border: 1px solid rgba(0, 0, 0, 0.15);
     font-weight: $btn-font-weight;
     overflow: hidden;
@@ -67,7 +52,7 @@ $btn-disabled-bg: #f1f1f1;
     }
     &--xs {
         border-radius: $margin-s;
-        padding: $margin-s $margin;
+        padding: $margin-s;
         font-size: $font-size-s;
         >i {
             font-size: $font-size-s;
