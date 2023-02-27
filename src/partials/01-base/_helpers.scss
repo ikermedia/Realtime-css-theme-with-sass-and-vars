@@ -1,0 +1,165 @@
+/**
+ * Helpers
+ * ----------------------------------------------------//
+ */
+
+.h--right {
+    float: right !important;
+}
+
+.h--left {
+    float: left !important;
+}
+
+.h--circle {
+    border-radius: 50%;
+}
+
+.h--align-center {
+    text-align: center;
+}
+
+.h--align-right {
+    text-align: right;
+}
+
+.h--align-left {
+    text-align: left;
+}
+
+.h--block {
+    display: block !important;
+}
+
+.h--none {
+    display: none !important;
+}
+
+.h--inline-block {
+    display: inline-block !important;
+}
+
+.h--inline {
+    display: inline !important;
+}
+
+.h--no-padding {
+    padding: 0;
+}
+
+.h--margin {
+    &-s {
+        margin: $margin-s !important;
+    }
+    &-m {
+        margin: $margin-m !important;
+    }
+    &-xs {
+        margin: $margin-xs !important;
+    }
+    &-l {
+        margin: $margin-l !important;
+    }
+    &-xl {
+        margin: $margin-xl !important;
+    }
+}
+
+.h--right-margin {
+    &-s {
+        margin-right: $margin-s !important;
+    }
+    &-m {
+        margin-right: $margin-m !important;
+    }
+    &-xs {
+        margin-right: $margin-xs !important;
+    }
+    &-l {
+        margin-right: $margin-l !important;
+    }
+    &-xl {
+        margin-right: $margin-xl !important;
+    }
+}
+
+.h--left-margin {
+    &-s {
+        margin-left: $margin-s !important;
+    }
+    &-m {
+        margin-left: $margin-m !important;
+    }
+    &-xs {
+        margin-left: $margin-xs !important;
+    }
+    &-l {
+        margin-left: $margin-l !important;
+    }
+    &-xl {
+        margin-left: $margin-xl !important;
+    }
+}
+
+.h--top-margin {
+    &-s {
+        margin-top: $margin-s !important;
+    }
+    &-m {
+        margin-top: $margin-m !important;
+    }
+    &-xs {
+        margin-top: $margin-xs !important;
+    }
+    &-l {
+        margin-top: $margin-l !important;
+    }
+    &-xl {
+        margin-top: $margin-xl !important;
+    }
+}
+
+.h--bottom-margin {
+    &-s {
+        margin-bottom: $margin-s !important;
+    }
+    &-m {
+        margin-bottom: $margin-m !important;
+    }
+    &-xs {
+        margin-bottom: $margin-xs !important;
+    }
+    &-l {
+        margin-bottom: $margin-l !important;
+    }
+    &-xl {
+        margin-bottom: $margin-xl !important;
+    }
+
+}
+
+.h--font-size {
+    &-xs {
+        font-size: $font-size-xs !important;
+    }
+    &-s {
+        font-size: $font-size-s !important;
+    }
+    &-m {
+        font-size: $font-size-m !important;
+    }
+    &-l {
+        font-size: $font-size-l !important;
+    }
+    &-xl {
+        font-size: $font-size-xl !important;
+    }
+}
+
+.h--bold {
+    font-weight: bold;
+}
+
+.h--normal {
+    font-weight: 400;
+}
