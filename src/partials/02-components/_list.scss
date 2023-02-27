@@ -1,5 +1,5 @@
 /**
- * @List
+ * List
  *-------------------------------------------------------------------------------------*/
 
 .list {
@@ -11,6 +11,7 @@
         text-align: center;
         border-bottom: none;
         font-size: $font-size-l;
+        color: $title-color;
     }
 
     &__body {
@@ -34,7 +35,7 @@
             font-size: $font-size-m;
             color: #666;
             overflow: hidden;
-            margin-bottom: 1px;
+            margin-bottom: 2px;
             padding: $margin-m;
             &:last-child {
                 border-bottom-color: white;

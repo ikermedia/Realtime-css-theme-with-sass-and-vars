@@ -340,6 +340,7 @@ template {
   --interface-mid: #e8ecf4;
   --interface-dark: #d4dae4;
   --interface-darker: #b4c1d6;
+  --title-color: $font-color ;
 }
 
 html {
@@ -355,10 +356,11 @@ body {
   height: 100%;
 }
 body.theme-dark {
-  --interface-light: #6e6e6e;
-  --interface-mid: #747474;
-  --interface-dark: #494949;
-  --interface-darker: #2a2a2a;
+  --interface-light: #384850;
+  --interface-mid: #1e282c;
+  --interface-dark: #111111;
+  --interface-darker: #000;
+  --title-color: #fff;
 }
 body.body-small {
   --space-unit: 0.5px;
@@ -620,6 +622,7 @@ hr,
   text-align: center;
   border-bottom: none;
   font-size: var(--font-size-l);
+  color: var(--title-color);
 }
 .list__body {
   background-color: var(--interface-mid);
@@ -641,7 +644,7 @@ hr,
   font-size: var(--font-size-m);
   color: #666;
   overflow: hidden;
-  margin-bottom: 1px;
+  margin-bottom: 2px;
   padding: var(--space-m);
 }
 .list__body__item:last-child {
